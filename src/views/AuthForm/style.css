@@ -1,0 +1,35 @@
+@import '../colours.css';
+
+.tabs {
+  display: flex;
+}
+
+.container {
+  border: solid 1px $silver;
+  border-radius: 4px;
+}
+
+.tabs > button {
+  padding: 20px;
+  border-bottom: solid 1px $silver;
+  flex-grow: 1;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.tabs > button:first-child {
+  border-right: 0;
+}
+
+.active {
+  background: $dark_blue;
+  border-bottom-color: $dark_blue !important;
+  transition: background-color 0.2s linear;
+  color: $white;
+}
+
+.content {
+  border-top: 0;
+  padding: 40px;
+}
